@@ -11,7 +11,3 @@ export default class User {
         return `${this.nome}, ${this.email}`;
     }
 }
-// const novoUser = new User('Nastia', 'nastia@n.com', '1986-11-06');
-// console.log(novoUser);
-// console.log(novoUser.exibirInfos());
-// console.log(User.prototype.isPrototypeOf(novoUser)); //true
