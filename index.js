@@ -1,14 +1,11 @@
 import User from "./User.js";
 import UserPrivado from "./UserPrivado.js";
-import Admin from "./Admin.js";
-import Docente from "./Docente.js";
 
-const novoUser = new User('Olga', 'olga@o.com', '1987-04-16');
+const novoUser = new User('Olga', 'olga@o.com', '2000-05-05');
 console.log(novoUser.exibirInfos());
-
 novoUser.nome = 'Nastia';
-console.log(novoUser.nome); // isso vai mudar o nome, pq no classe User nome nao e privado
+console.log(novoUser.nome); // Isso vai mudar o nome, porque na classe User nome não é privado.
 
-const novoUserPrivado = new UserPrivado ('Olga', 'ola@o.com', '1987-04-16');
-//novoUserPrivado.#nome = 'Nastia';  //vai mostrar erro 
+const novoUserPrivado = new UserPrivado ('Olga', 'ola@o.com', '2000-05-05');
+novoUserPrivado.#nome = 'Nastia';  //Vai mostrar erro, porque na classe UserPrivado nome é uma propriedade privado.
 
